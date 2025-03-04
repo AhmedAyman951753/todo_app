@@ -15,7 +15,7 @@ class NoTasks extends StatelessWidget {
       backgroundColor: AppColors.primary,
       body: Column(
         children: [
-          SizedBox(height: 20),
+          SizedBox(height: 50),
           ProfileAppBar(name: name),
           SizedBox(height: 80),
           Row(
@@ -25,15 +25,7 @@ class NoTasks extends StatelessWidget {
             ],
           ),
           SizedBox(height: 20),
-          IconButton(icon: SvgPicture.asset(AppIcons.notasks),
-                     onPressed: ()
-                     {
-                       Navigator.push(context, MaterialPageRoute(builder: (context)
-                       {
-                         return AddTask(name: name);
-                       }
-                       ));
-                     },)
+          SvgPicture.asset(AppIcons.notasks)
         ],
       ),
     );

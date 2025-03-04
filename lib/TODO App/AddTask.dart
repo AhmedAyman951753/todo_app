@@ -65,8 +65,9 @@ class AddTask extends StatelessWidget {
           ),
 
           SizedBox(height: 10),
-          TextContainer(label: "Task Name", hint: "Enter task name", height: 63),
-          TextContainer(label: "Description", hint: "Enter task description ...", height: 142),
+          TextContainer(label: "Task Name", hint: "Enter task name", borderColor: AppColors.white),
+          SizedBox(height: 20),
+          TextContainer(label: "Description", hint: "Enter task description ...", height: 142, borderColor: AppColors.white),
           SizedBox(height: 20),
           Elevbutton(label: "Save",
                      borderColor: AppColors.green,

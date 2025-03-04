@@ -16,7 +16,7 @@ class Home extends StatelessWidget {
     return Scaffold(
       backgroundColor: AppColors.primary,
       body: Padding(
-        padding: const EdgeInsets.only(top: 20),
+        padding: const EdgeInsets.only(top: 50),
         child: SingleChildScrollView(
           child: Column(
             children: [
@@ -55,7 +55,9 @@ class Home extends StatelessWidget {
               Row(children: [SizedBox(width: 20), Text("Task Groups"),],),
               SizedBox(height: 10),
               TaskGroupContainer(iconColor: AppColors.semiGreen, iconData: SvgPicture.asset(AppIcons.greenperson), label: "Personal Task", counter: 5, counterColor: AppColors.green, counterContainerColor: AppColors.semiGreen),
+              SizedBox(height: 20),
               TaskGroupContainer(iconColor: AppColors.backcolorIcon, iconData: SvgPicture.asset(AppIcons.home2), label: "Home Task", counter: 3, counterColor: AppColors.pink, counterContainerColor: AppColors.backcolorIcon),
+              SizedBox(height: 20),
               TaskGroupContainer(iconColor: AppColors.brown, iconData: SvgPicture.asset(AppIcons.bag), label: "Work Task", counter: 1, counterColor: AppColors.white, counterContainerColor: AppColors.black)
             ],
           ),

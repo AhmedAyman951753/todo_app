@@ -17,7 +17,7 @@ class ProfileSettings extends StatelessWidget {
       backgroundColor: AppColors.primary,
       body: Column(
         children: [
-          SizedBox(height: 20),
+          SizedBox(height: 50),
           Container(margin: EdgeInsets.only(left: 20), child: OptionContainer(label: "Hello!", option: name)),
           SizedBox(height: 40),
           DefaultContainer(child: InkWell(
@@ -39,7 +39,7 @@ class ProfileSettings extends StatelessWidget {
             },
           ),
           ),
-
+          SizedBox(height: 20),
           DefaultContainer(child: InkWell(
             child: Row(
               children: [

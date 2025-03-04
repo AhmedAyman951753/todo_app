@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:todo_app/TODO App/Categories/AppColors.dart';
 import 'package:todo_app/TODO App/Profile.dart';
 import 'package:flutter_svg/svg.dart';
-
 import 'package:todo_app/TODO App/Categories/AppIcons.dart';
 import 'package:todo_app/TODO App/Categories/DefaultContainer.dart';
 import 'package:todo_app/TODO App/Categories/OptionContainer.dart';

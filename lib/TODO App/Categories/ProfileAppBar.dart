@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:todo_app/TODO%20App/AddTask.dart';
 import 'package:todo_app/TODO%20App/ProfileSettings.dart';
 import 'package:flutter_svg/svg.dart';
-
-import 'package:todo_app/TODO App/Categories/AppImages.dart';
 import 'package:todo_app/TODO App/Categories/AppIcons.dart';
 import 'package:todo_app/TODO App/Categories/OptionContainer.dart';
 

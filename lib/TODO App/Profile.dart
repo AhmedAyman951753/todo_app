@@ -20,7 +20,7 @@ class _TodoProfileState extends State<TodoProfile> {
       backgroundColor: AppColors.primary,
       body: Column(
         children: [
-          SizedBox(height: 34),
+          SizedBox(height: 24),
           ProfilePicture(height: 375),
           SizedBox(height: 20),
           TextContainer(label: "Your Name", hint: "Type your name here", textController: textController, borderColor: AppColors.green,),

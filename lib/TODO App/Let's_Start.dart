@@ -13,7 +13,7 @@ class Start extends StatelessWidget {
       backgroundColor: AppColors.primary,
       body: Column(
         children: [
-          SizedBox(height: 50),
+          SizedBox(height: 10),
           Container(
             margin: EdgeInsets.all(20),
             width: 302,

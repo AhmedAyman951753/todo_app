@@ -3,9 +3,11 @@ import 'package:todo_app/TODO App/Categories/AppColors.dart';
 import 'package:flutter_svg/svg.dart';
 
 import 'package:todo_app/TODO App/Categories/AppIcons.dart';
+import 'package:todo_app/TODO%20App/ProfileSettings.dart';
 
 class Settings extends StatefulWidget {
-  const Settings({super.key});
+  final String name;
+  const Settings({super.key, required this.name});
 
   @override
   State<Settings> createState() => _SettingsState();
@@ -27,7 +29,14 @@ class _SettingsState extends State<Settings> {
             padding: EdgeInsets.all(20),
             child: Row(
               children: [
-                SvgPicture.asset(AppIcons.curvearrowbackward),
+                InkWell(child: SvgPicture.asset(AppIcons.curvearrowbackward), onTap: ()
+                {
+                  Navigator.push(context, MaterialPageRoute(builder: (context)
+                  {
+                    return ProfileSettings(name: widget.name);
+                  }
+                  ));
+                },),
                 SizedBox(width: 120),
                 Text("Settings", style: TextStyle(fontSize: 19)),
               ],

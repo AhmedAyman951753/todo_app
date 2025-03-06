@@ -53,7 +53,7 @@ class ProfileSettings extends StatelessWidget {
             {
               Navigator.push(context, MaterialPageRoute(builder: (context)
               {
-                return Settings();
+                return Settings(name: name);
               }
               ));
             },

@@ -21,4 +21,6 @@ abstract class AppIcons
   static const String curvearrowbackward = '${defaultPath}curvearrowbackward.svg';
   static const String curvearrowbottom = '${defaultPath}curvearrowbottom.svg';
   static const String notasks = '${defaultPath}notasks.svg';
+  static const String todo_splash = '${defaultPath}todo_splash.svg';
+  static const String lock = '${defaultPath}Lock.svg';
 }

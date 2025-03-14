@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import '../../core/AppColors.dart';
 import 'MyButtons.dart';
-import 'package:todo_app/TODO App/Categories/AppColors.dart';
 class TaskCounter extends StatelessWidget {
   final String label;
   final int number;
@@ -14,7 +14,7 @@ class TaskCounter extends StatelessWidget {
         children: [
           Text(label),
           SizedBox(width: 50,),
-          MyButtons(width: 14,
+          MyButtons(width: 15,
             height: 15,
             color: AppColors.semiGreen,
             radius: 5,

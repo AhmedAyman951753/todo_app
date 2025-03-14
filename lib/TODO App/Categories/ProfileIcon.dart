@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:todo_app/TODO App/Categories/AppImages.dart';
+import '../../core/AppImages.dart';
 class ProfileIcon extends StatelessWidget {
   const ProfileIcon({super.key});
 

@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:todo_app/TODO App/Categories/AppColors.dart';
 import 'package:flutter_svg/svg.dart';
-
-import 'package:todo_app/TODO App/Categories/AppIcons.dart';
-import 'package:todo_app/TODO%20App/ProfileSettings.dart';
+import 'package:todo_app/features/Updates/views/settings_view.dart';
+import '../../../core/AppColors.dart';
+import '../../../core/AppIcons.dart';
 
 class Settings extends StatefulWidget {
   final String name;
@@ -33,7 +32,7 @@ class _SettingsState extends State<Settings> {
                 {
                   Navigator.push(context, MaterialPageRoute(builder: (context)
                   {
-                    return ProfileSettings(name: widget.name);
+                    return SettingsView(name: widget.name);
                   }
                   ));
                 },),
@@ -43,6 +42,25 @@ class _SettingsState extends State<Settings> {
             ),
           ),
           SizedBox(height: 20),
+          Container(
+              padding: EdgeInsets.all(20),
+              child: Row(
+                children: [
+                  Expanded(child: Text("Language", style: TextStyle(fontSize: 20))),
+                  Container(width: 51, height: 36, padding: EdgeInsets.all(5),
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.only(topLeft: Radius.circular(5), bottomLeft: Radius.circular(5)),
+                              color: AppColors.lightGrey
+                            ),
+                  child: Center(child: Text('AR', style: TextStyle(fontSize: 16),)),),
+                  Container(width: 51, height: 36, padding: EdgeInsets.all(5),
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.only(topRight: Radius.circular(5), bottomRight: Radius.circular(5)),
+                        color: AppColors.green
+                    ),
+                    child: Center(child: Text('EN', style: TextStyle(fontSize: 16, color: AppColors.white),)),)
+                ],
+              )),
           Container(
               padding: EdgeInsets.all(20),
               child: Row(

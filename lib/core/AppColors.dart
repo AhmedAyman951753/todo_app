@@ -13,4 +13,6 @@ abstract class AppColors
   static const Color semiPurple = Color(0XFF6E6A7C);
   static const Color semiBlack = Color(0XFF24252C);
   static const Color brown = Color(0XFF372525);
+  static const Color lightBlue = Color(0XFFCEEBDC);
+  static const Color lightGrey = Color(0XFFD9D9D9);
 }

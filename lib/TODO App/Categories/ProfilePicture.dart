@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:todo_app/TODO App/Categories/AppImages.dart';
+import '../../core/AppImages.dart';
 class ProfilePicture extends StatelessWidget {
   final double height;
-  const ProfilePicture({super.key, required this.height});
+  final double width;
+  const ProfilePicture({super.key, required this.height, required this.width});
 
   @override
   Widget build(BuildContext context) {

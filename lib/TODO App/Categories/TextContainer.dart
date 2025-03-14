@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:todo_app/TODO%20App/Categories/AppColors.dart';
+import '../../core/AppColors.dart';
 import 'DefaultContainer.dart';
 
 class TextContainer extends StatefulWidget {
@@ -20,29 +20,32 @@ class _TextContainerState extends State<TextContainer> {
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
-      onTap: () {
-        setState(() {
-          isTapped = true; // Update state when tapped
-        });
-      },
-
-      child: DefaultContainer(
-        width: widget.width,
-        height: widget.height,
-        bordercolor: isTapped ? widget.borderColor : AppColors.white,
-        child: TextFormField(controller: widget.textController, style: TextStyle(fontSize: 14),
-          cursorColor: Colors.black,
-          cursorHeight: 14,
-          cursorWidth: 1,
-          decoration: InputDecoration(contentPadding: EdgeInsets.only(top: 5),
-              label: Text(widget.label, style: TextStyle(color: Color(0XFF6E6A7C), fontSize: 10)),
-              hintText: widget.hint,
-              hintStyle: TextStyle(fontSize: 14),
-              fillColor: Colors.white,
-              border: InputBorder.none),
-        ),
-
+    return DefaultContainer(
+      width: widget.width,
+      height: widget.height,
+      bordercolor: isTapped ? widget.borderColor : Colors.grey,
+      child: TextFormField(
+        onTap: (){
+          setState(() {
+            isTapped = true; // Update state when tapped
+          });
+        },
+        onFieldSubmitted: (value)
+        {
+          setState(() {
+            isTapped = false; // Update state when tapped
+          });
+        },
+        controller: widget.textController, style: TextStyle(fontSize: 14),
+        cursorColor: Colors.black,
+        cursorHeight: 14,
+        cursorWidth: 1,
+        decoration: InputDecoration(contentPadding: EdgeInsets.only(top: 5),
+            label: Text(widget.label, style: TextStyle(color: Color(0XFF6E6A7C), fontSize: 10)),
+            hintText: widget.hint,
+            hintStyle: TextStyle(fontSize: 14),
+            fillColor: Colors.white,
+            border: InputBorder.none),
       ),
 
     );

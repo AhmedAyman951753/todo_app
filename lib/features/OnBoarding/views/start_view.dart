@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:todo_app/TODO App/Profile.dart';
+import 'package:todo_app/core/my_navigator.dart';
+import 'package:todo_app/core/widgets/start_elev_button.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:todo_app/TODO App/Categories/AppIcons.dart';
-import 'package:todo_app/TODO App/Categories/AppColors.dart';
-import 'package:todo_app/TODO App/Categories/MyElevatedButton.dart';
+import 'package:todo_app/features/OnBoarding/views/register_view.dart';
+import '../../../core/AppColors.dart';
+import '../../../core/AppIcons.dart';
 class Start extends StatelessWidget {
   const Start({super.key});
 
@@ -35,23 +36,12 @@ class Start extends StatelessWidget {
             ],
           ),
           SizedBox(height: 20),
-          Elevbutton(label: "Let's Start",
-                     borderColor: AppColors.green,
-                     buttonColor: AppColors.green,
-                     textColor: Colors.white,
-                     shadowColor: AppColors.green,
-                     onPressed: ()
-                     {
-                       Navigator.push(context, MaterialPageRoute(builder: (context)
-                       {
-                         return TodoProfile();
-                       }
-                       ));
-                     },)
+          StartElevButton(label: "Let's Start", onPressed: ()
+          {
+            myNavigator(context, screen: RegisterView());
+          })
         ],
-
       ),
-
     );
   }
 }

@@ -1,15 +1,12 @@
-import 'package:dartz/dartz.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:todo_app/TODO App/Categories/ProfileAppBar.dart';
 import 'package:todo_app/features/Tasks/manager/task_cubit.dart';
+import 'package:todo_app/features/Tasks/views/widgets/ProfileAppBar.dart';
 import 'package:todo_app/features/Tasks/views/widgets/task_container.dart';
-import 'package:todo_app/features/Tasks/views/widgets/tasks_list.dart';
 import '../../../core/AppColors.dart';
 import 'package:todo_app/TODO App/Categories/TaskCounter.dart';
 import '../../OnBoarding/manager/register_cubit.dart';
 import '../../OnBoarding/manager/register_state.dart';
-import '../data/models/task_model.dart';
 import '../manager/task_state.dart';
 
 class Home extends StatelessWidget {

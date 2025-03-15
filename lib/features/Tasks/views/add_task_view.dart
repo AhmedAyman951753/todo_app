@@ -4,7 +4,6 @@ import 'package:todo_app/TODO App/Categories/TextContainer.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:todo_app/core/AppImages.dart';
 import 'package:todo_app/core/widgets/start_elev_button.dart';
-import 'package:todo_app/features/Tasks/data/models/task_model.dart';
 import 'package:todo_app/features/Tasks/manager/task_cubit.dart';
 import 'package:todo_app/features/Tasks/manager/task_state.dart';
 import '../../../core/AppColors.dart';

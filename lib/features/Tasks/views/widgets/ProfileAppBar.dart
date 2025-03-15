@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:todo_app/TODO App/Categories/OptionContainer.dart';
 import 'package:todo_app/features/Updates/views/settings_view.dart';
-import '../../core/AppIcons.dart';
-import '../../features/Tasks/views/add_task_view.dart';
+import '../../../../core/AppIcons.dart';
+import '../add_task_view.dart';
 
 class ProfileAppBar extends StatelessWidget {
   final String name;

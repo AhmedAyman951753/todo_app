@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:todo_app/TODO App/Categories/ProfileAppBar.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:todo_app/features/OnBoarding/manager/register_cubit.dart';
 import 'package:todo_app/features/OnBoarding/manager/register_state.dart';
+import 'package:todo_app/features/Tasks/views/widgets/ProfileAppBar.dart';
 import '../../../core/AppColors.dart';
 import '../../../core/AppIcons.dart';
 

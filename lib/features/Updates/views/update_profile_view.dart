@@ -63,12 +63,12 @@ class UpdateProfileView extends StatelessWidget {
                         SizedBox(height: 10),
                         StartElevButton(label: "Update", onPressed: ()
                         {
-                          UpdateProfileCubit.get(context).update(name: UpdateProfileCubit.get(context).nameController.text, oldName: name);})
+                          UpdateProfileCubit.get(context).update(oldName: name);})
                       ],
                     ) : Column(
                       children: [
                         SizedBox(),
-                        StartElevButton(label: "Update", onPressed: (){UpdateProfileCubit.get(context).update(name: UpdateProfileCubit.get(context).nameController.text, oldName: name);})
+                        StartElevButton(label: "Update", onPressed: (){UpdateProfileCubit.get(context).update(oldName: name);})
                       ],
                     ),
                   ],

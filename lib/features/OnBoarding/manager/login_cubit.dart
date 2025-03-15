@@ -11,7 +11,7 @@ class LoginCubit extends Cubit<LoginState>
   static LoginCubit get(context) => BlocProvider.of(context);
   LoginRepo loginRepo = LoginRepo();
 
-  void login({required String name, required String password}) async
+  void login() async
   {
     emit(LoginLoadingState());
     await Future.delayed(Duration(milliseconds: 2000));

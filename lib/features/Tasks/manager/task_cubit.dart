@@ -12,7 +12,7 @@ class TaskCubit extends Cubit<TaskState>
   final TextEditingController descriptionController = TextEditingController();
   static TaskCubit get(context) => BlocProvider.of(context);
   TaskRepo taskRepo = TaskRepo();
-  void addTask(TaskModel task) async
+  void addTask() async
   {
     emit(TaskLoadingState());
     await Future.delayed(Duration(milliseconds: 2000));

@@ -76,17 +76,14 @@ class ChangePasswordView extends StatelessWidget {
                         Text(state.error),
                         SizedBox(height: 10),
                         StartElevButton(label: "Update", onPressed: ()
-                        {
-                          ChangePasswordCubit.get(context).change(oldPassword: ChangePasswordCubit.get(context).oldPasswordController.text,
-                                                                  newPassword: ChangePasswordCubit.get(context).newPasswordController.text,
-                                                                  confirmPassword: ChangePasswordCubit.get(context).confirmPasswordController.text);})
+                         {
+                            ChangePasswordCubit.get(context).change();
+                         })
                       ],
                     ) : Column(
                       children: [
                         SizedBox(),
-                        StartElevButton(label: "Update", onPressed: (){ChangePasswordCubit.get(context).change(oldPassword: ChangePasswordCubit.get(context).oldPasswordController.text,
-                                                                                                                newPassword: ChangePasswordCubit.get(context).newPasswordController.text,
-                                                                                                                confirmPassword: ChangePasswordCubit.get(context).confirmPasswordController.text);})
+                        StartElevButton(label: "Update", onPressed: (){ChangePasswordCubit.get(context).change();})
                       ],
                     ),
                   ],

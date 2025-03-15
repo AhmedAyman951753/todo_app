@@ -10,7 +10,7 @@ class UpdateProfileCubit extends Cubit<UpdateState>
   static UpdateProfileCubit get(context) => BlocProvider.of(context);
   UpdateProfileRepo updateProfileRepo = UpdateProfileRepo();
 
-  void update({required String name, required String oldName}) async
+  void update({required String oldName}) async
   {
     emit(UpdateLoadingState());
     await Future.delayed(Duration(milliseconds: 2000));

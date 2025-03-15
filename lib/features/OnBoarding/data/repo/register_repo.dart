@@ -13,7 +13,7 @@ class RegisterRepo
         }
       if ((user.password == (null)) || (user.password == ''))
       {
-        return left('Enter valid name');
+        return left('Enter valid password');
       }
       if ((user.password.length) < 6)
         {

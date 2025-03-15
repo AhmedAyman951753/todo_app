@@ -14,7 +14,7 @@ class ChangePasswordCubit extends Cubit<ChangeState>
   static ChangePasswordCubit get(context) => BlocProvider.of(context);
   ChangePasswordRepo changePasswordRepo = ChangePasswordRepo();
 
-  void change({required String oldPassword, required String newPassword, required String confirmPassword}) async
+  void change() async
   {
     emit(ChangeLoadingState());
     await Future.delayed(Duration(milliseconds: 2000));

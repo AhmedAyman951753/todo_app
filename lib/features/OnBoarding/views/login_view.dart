@@ -69,14 +69,13 @@ class LoginView extends StatelessWidget {
                         SizedBox(height: 10),
                         StartElevButton(label: "Login", onPressed: ()
                         {
-                          LoginCubit.get(context).login(name: LoginCubit.get(context).nameController.text,
-                                                        password: LoginCubit.get(context).passwordController.text);})
+                          LoginCubit.get(context).login();
+                        })
                       ],
                     ) : Column(
                       children: [
                         SizedBox(),
-                        StartElevButton(label: "Login", onPressed: (){LoginCubit.get(context).login(name: LoginCubit.get(context).nameController.text,
-                            password: LoginCubit.get(context).passwordController.text);})
+                        StartElevButton(label: "Login", onPressed: (){LoginCubit.get(context).login();})
                       ],
                     ),
                   ],

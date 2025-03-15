@@ -92,10 +92,8 @@ class AddTask extends StatelessWidget {
                               SizedBox(height: 10),
                               StartElevButton(label: "Save", onPressed: ()
                               {
-                                TaskCubit.get(context).addTask(
-                                    TaskModel(title: TaskCubit.get(context).titleController.text,
-                                        description: TaskCubit.get(context).descriptionController.text)
-                                );
+                                TaskCubit.get(context).addTask();
+
                               })
                             ],
                           ): Column(
@@ -103,10 +101,7 @@ class AddTask extends StatelessWidget {
                                 SizedBox(height: 10),
                                 StartElevButton(label: "Save", onPressed: ()
                                 {
-                                  TaskCubit.get(context).addTask(
-                                    TaskModel(title: TaskCubit.get(context).titleController.text,
-                                              description: TaskCubit.get(context).descriptionController.text)
-                  );
+                                  TaskCubit.get(context).addTask();
                   })
                         ],
                       )
